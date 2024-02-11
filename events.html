@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+  </head>
+  <body>
+    <button id="btnOne"> Ring Bell </button>
+    <div id="container">
+
+    </div>
+  </body>
+</html>
+<script>
+  // Write js here
+  let btnOne = document.querySelector("#btnOne")
+  let container = document.getElementById("container")
+   
+  btnOne.addEventListener("click",onclick)
+
+  function onclick(){
+    let h5 = document.createElement("h5")
+    h5.innerHTML = "<p>Please open the door</P>"
+    container.append(h5)
+  }
+
+</script>
